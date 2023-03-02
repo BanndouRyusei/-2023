@@ -7,7 +7,7 @@
 
 CGame::CGame() {
 	TaskEx::InitTaskList();			//タスクシステムの初期化
-	TaskEx::AddTask(new CControlSound(0.9f));			//音を先に読み込んでおく
+	//TaskEx::AddTask(new CControlSound(0.9f));			//音を先に読み込んでおく
 	m_now_screen = TITLE_SCREEN;
 	m_pScreen = NULL;
 }
