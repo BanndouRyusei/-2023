@@ -35,6 +35,9 @@ void CGame::Update()
 		case CLEAR_SCREEN:
 			m_pScreen = new CClearScreen();
 			break;
+		case OVER_SCREEN:
+			m_pScreen = new COverScreen();
+			break;
 		default:
 			assert(false);
 		}

@@ -57,6 +57,9 @@
     <ClCompile Include="Clear_Screen.cpp">
       <Filter>ClearScreen</Filter>
     </ClCompile>
+    <ClCompile Include="Over_Screen.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game.h">
@@ -91,6 +94,9 @@
     </ClInclude>
     <ClInclude Include="Clear_Screen.h">
       <Filter>ClearScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="Over_Screen.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

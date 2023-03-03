@@ -11,7 +11,8 @@
 enum SCREEN{
 	TITLE_SCREEN,
 	GAME_SCREEN,
-	CLEAR_SCREEN
+	CLEAR_SCREEN,
+	OVER_SCREEN
 };
 
 //ベースとなるCScreenクラスの定義

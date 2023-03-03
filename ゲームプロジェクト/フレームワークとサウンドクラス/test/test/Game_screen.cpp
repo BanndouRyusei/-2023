@@ -41,6 +41,11 @@ void CGameScreen::Update()
 		TaskEx::DeleteDeathTask();
 		m_state = CLEAR_SCREEN;
 	}
+	if (CheckHitKey(KEY_INPUT_G)) {
+		TaskEx::DethTask();		//生きているタスクの終了処理
+		TaskEx::DeleteDeathTask();
+		m_state = OVER_SCREEN;
+	}
 #endif
 }
 
@@ -52,6 +57,6 @@ void CGameScreen::Draw() const
 	clsDx();
 
 #if defined(_DEBUG)|(DEBUG)
-	DrawString(10, 100, "Game Screen Hit F key to GameClear Screen", GetColor(255, 255, 255));
+	DrawString(10, 100, "Game Screen Hit F key to GameClear Screen Hit G key to GameOver Screen", GetColor(255, 255, 255));
 #endif
 }

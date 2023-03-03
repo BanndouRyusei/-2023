@@ -13,6 +13,7 @@
   <ItemGroup>
     <ClCompile Include="Clear_Screen.cpp" />
     <ClCompile Include="game.cpp" />
+    <ClCompile Include="Over_Screen.cpp" />
     <ClCompile Include="SoundEffect.cpp" />
     <ClCompile Include="Title_screen.cpp" />
     <ClCompile Include="Game_screen.cpp" />
@@ -23,6 +24,7 @@
   <ItemGroup>
     <ClInclude Include="Clear_Screen.h" />
     <ClInclude Include="game.h" />
+    <ClInclude Include="Over_Screen.h" />
     <ClInclude Include="Sound.h" />
     <ClInclude Include="Title_screen.h" />
     <ClInclude Include="Game_screen.h" />

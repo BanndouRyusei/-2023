@@ -9,7 +9,8 @@
 #include"myLib.h"
 #include"Title_screen.h"
 #include"Clear_Screen.h"
-#include"game_screen.h"
+#include"Game_screen.h"
+#include"Over_Screen.h"
 #include"screen.h"
 #include"Sound.h"
 
