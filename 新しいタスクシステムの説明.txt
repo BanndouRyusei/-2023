@@ -1,0 +1,25 @@
+タスクシステムの変更点
+タスクシステムの関数　読み替え
+TaskEx::AddTask(new CPlayer(0.9f));→new CPlayer(0.9f);
+TaskEx::RunTask();→TaskManager::Instance()->Update();
+TaskEx::DrawTask();→TaskManager::Instance()->Draw();
+GetCount(CAST::PLAYER);→TaskManager::Instance()->GetCount(CAST::PLAYER);
+CPlayer* player=(CPlayer*)GetTask(CAST::PLAYER);
+↓
+CPlayer* player=(CPlayer*)TaskManager::Instance()->GetTask(CAST::PLAYER);
+クラスのコンストラクタの書き方
+CPlayer::CPlayer(float _priority)
+	:Task(_priority,CAST::PLAYER)
+{
+	m_drawTask.Init(this, std::bind(&CPlayer::Draw, this), _priority);←描画関数の依頼
+}
+
+説明
+std::function<void()>は関数ポインタが入る型(簡単に言うとint型の関数版)
+std::bind(&CPlayer::Draw, this)は引数をstd::function<void()>型にしてくれる。
+引数には渡したい関数のアドレスとどのクラスであるか？(上のやつだとthis)を指定する
+おそらく間違っているので参考になりそうなサイトのURLを貼っておきます。
+https://kaworu.jpn.org/cpp/std::bind#.E7.B0.A1.E5.8D.98.E3.81.AAstd::bind1.E3.81.AE.E4.BE.8B
+https://qiita.com/tkyaji/items/1aa7bb01658e848d3ef4
+https://qiita.com/ymd_/items/27009e3e6d7a73653fab
+https://marycore.jp/prog/cpp/pass-function-as-argument/#std%3A%3Afunction
