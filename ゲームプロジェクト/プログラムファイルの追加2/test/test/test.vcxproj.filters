@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Title">
+      <UniqueIdentifier>{4f8b1efe-c429-40e3-8980-96746267ed30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mylib">
+      <UniqueIdentifier>{bc13af7f-1481-4925-b124-6da2d7df215e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameScreen">
+      <UniqueIdentifier>{1b2e7901-ff21-4baf-b4fb-1ba512778cd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound">
+      <UniqueIdentifier>{32cda521-318b-4602-a77e-029ff717ed8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClearScreen">
+      <UniqueIdentifier>{6996db0a-e5ef-43d4-a33c-32f1e1490224}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OverScreen">
+      <UniqueIdentifier>{1389b624-6616-4de0-b841-478bdfcc4ec3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TaskSystem">
+      <UniqueIdentifier>{af3e5ca5-90c3-4dd0-92ab-7d225cbb0319}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stage">
+      <UniqueIdentifier>{bcee3984-db6d-4444-9be0-466f0565ab84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{70e58b2f-a31c-4096-a761-7c53099606df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlayerShot">
+      <UniqueIdentifier>{cba94945-b1e6-4a68-ae9a-18d8c6a8e087}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enemy">
+      <UniqueIdentifier>{d049dd6c-18be-498e-9ea9-e8ccdc1eb095}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{9b507b36-4fba-4151-b42c-d67f882763e6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="win_main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Title_screen.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_screen.cpp">
+      <Filter>GameScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="myLib.cpp">
+      <Filter>mylib</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundEffect.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Clear_Screen.cpp">
+      <Filter>ClearScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="Over_Screen.cpp">
+      <Filter>OverScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawTask.cpp">
+      <Filter>TaskSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Task.cpp">
+      <Filter>TaskSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskManager.cpp">
+      <Filter>TaskSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlPlayer.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerShot.cpp">
+      <Filter>PlayerShot</Filter>
+    </ClCompile>
+    <ClCompile Include="ZakoA.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlZakoA.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="HP.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Life.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Time.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="game.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Title_screen.h">
+      <Filter>Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_screen.h">
+      <Filter>GameScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="myLib.h">
+      <Filter>mylib</Filter>
+    </ClInclude>
+    <ClInclude Include="screen.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Clear_Screen.h">
+      <Filter>ClearScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="Over_Screen.h">
+      <Filter>OverScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawTask.h">
+      <Filter>TaskSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Task.h">
+      <Filter>TaskSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskManager.h">
+      <Filter>TaskSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectBase.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CharaBase.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ShotBase.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerShot.h">
+      <Filter>PlayerShot</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="UI.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
