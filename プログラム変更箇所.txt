@@ -1,0 +1,72 @@
+そのままコピーするもの
+Sound.h
+SoundEffect.cpp
+Player.cpp
+Title.h
+Title.cpp
+Title_Screen.cpp
+Clear.cpp
+Clear_Screen.cpp
+Player.h
+ControlPlayer.cpp
+下のテキストを指定ファイルにあるものと入れ替える
+ない場合は書く(ファイルを入れ替えてもよい)
+myLib.h
+//グローバル変数
+extern int g_Score;
+const int ALPHA_STEP = 3;
+//タスクの管理
+enum class PHASE
+{
+	START, PLAY, END, NONE
+};
+#if defined(_DEBUG) | defined(DEBUG)
+//デバッグ用コンソール呼び出し
+void DebugModeOn(void);
+#endif
+myLib.cpp
+//グローバル変数
+int g_Score = 0;
+//オブジェクト同士の当たり判定
+//引数　座標 _apos _bpos　オブジェクトの厚さ(Z方向) _awidth _bwidth　画像ハンドル _aghandle _bghandle
+bool IsHitObject(const VECTOR& _apos, const VECTOR& _bpos, float _awidth, float _bwidth, int _aghandle, int _bghandle) {
+	//画像サイズを取得
+	int aSizeX, aSizeY;
+	int bSizeX, bSizeY;
+	GetGraphSize(_aghandle, &aSizeX, &aSizeY);
+	GetGraphSize(_bghandle, &bSizeX, &bSizeY);
+
+	Rect arect, brect;
+	arect.Width = aSizeX; arect.Height = aSizeY;
+	brect.Width = bSizeX; brect.Height = bSizeY;
+
+	if (IsHitBox(_apos.x, _apos.y, _bpos.x, _bpos.y, arect, brect) && IsHitZLine(_apos.z, _bpos.z, _awidth, _bwidth)) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+#if defined(_DEBUG) | defined(DEBUG)
+//デバッグ用コンソール呼び出し
+void DebugModeOn(void) {
+	//デバッグ用にコンソールを呼び出す
+	AllocConsole();
+	freopen("CONOUT$", "w", stdout);
+	freopen("CONIN$", "r", stdin);
+	//デバッグコンソールがアクティブウィンドウになるので
+	//ゲーム本体のウィンドウをアクティブにする
+	SetForegroundWindow(GetMainWindowHandle());
+}
+#endif
+Task.h
+//タスクの識別子
+enum class CAST
+{
+	CONTROLPLAYER, PLAYER, PLAYERSHOT, CONTROLZAKOA, ZAKO_A,
+	CONTROLZAKOB, ZAKO_B, CONTROLBOSS, BOSS, STAGE, LIFE, HP, UI, TIME, SCORE,
+	CONTROLSOUND, BGM, SE, TITLE, TITLEMENU, CLEAR, GAMECLEAR, GAMEOVER, NONE//タスクを作る事に、識別子をここに登録する
+};
+
+
+
