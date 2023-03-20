@@ -141,14 +141,14 @@
     <ClCompile Include="Time.cpp">
       <Filter>UI</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\03.16 タイマー\test\test\Score.cpp">
-      <Filter>UI</Filter>
-    </ClCompile>
     <ClCompile Include="ZakoB.cpp">
       <Filter>Enemy</Filter>
     </ClCompile>
     <ClCompile Include="Boss.cpp">
       <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Score.cpp">
+      <Filter>UI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

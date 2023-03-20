@@ -11,7 +11,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\03.16 タイマー\test\test\Score.cpp" />
     <ClCompile Include="Boss.cpp" />
     <ClCompile Include="Clear.cpp" />
     <ClCompile Include="Clear_Screen.cpp" />
@@ -26,6 +25,7 @@
     <ClCompile Include="Over_Screen.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayerShot.cpp" />
+    <ClCompile Include="Score.cpp" />
     <ClCompile Include="Shadow.cpp" />
     <ClCompile Include="ShadowManager.cpp" />
     <ClCompile Include="SoundEffect.cpp" />
